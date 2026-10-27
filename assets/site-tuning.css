@@ -53,6 +53,7 @@ footer {
 }
 
 .hero-facts {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-color: var(--line);
   background: #fffffff0;
 }
@@ -227,6 +228,7 @@ footer {
   }
 
   .hero-facts {
+    grid-template-columns: 1fr;
     margin-top: 54px;
     gap: 14px;
     border: 0;
