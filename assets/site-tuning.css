@@ -1,0 +1,268 @@
+.hero-shell {
+  min-height: 650px;
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+#starfield {
+  opacity: .58;
+}
+
+.hero {
+  background: linear-gradient(90deg, #fff 0, #fffffff2 56%, #ffffff33 84%, transparent 100%);
+}
+
+.hero .eyebrow {
+  color: var(--green);
+}
+
+.lede {
+  color: var(--muted);
+}
+
+.light-link {
+  color: var(--ink) !important;
+}
+
+.button.light {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff !important;
+}
+
+.button.light:hover {
+  background: var(--green);
+}
+
+.hero-facts {
+  border-color: var(--line);
+  background: #ffffffd9;
+}
+
+.hero-facts div {
+  border-color: var(--line);
+}
+
+.hero-facts span {
+  color: var(--muted);
+}
+
+.skills {
+  margin-top: 38px;
+}
+
+.skills div {
+  gap: 24px;
+  padding: 17px 0;
+  line-height: 1.55;
+}
+
+.project-grid {
+  gap: 20px;
+}
+
+.project {
+  padding: 36px;
+}
+
+.project p:not(.project-label) {
+  margin: 0;
+}
+
+.tags {
+  gap: 9px;
+  margin-top: 26px;
+}
+
+.tags li {
+  padding: 7px 10px;
+}
+
+.project-actions {
+  margin-top: 32px;
+}
+
+@media (max-width: 780px) {
+  .nav-links > a:not(.button) {
+    display: inline;
+  }
+
+  .nav-links a[href="#experience"] {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 68px 0 46px;
+    background: #ffffffe8;
+  }
+
+  h1 {
+    line-height: 1.01;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+  }
+
+  .hero-facts {
+    margin-top: 54px;
+  }
+
+  .hero-facts div,
+  .hero-facts div:first-child {
+    padding: 18px 0;
+    border-color: var(--line);
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-heading {
+    gap: 22px;
+    margin-bottom: 36px;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+
+  .capability-grid article,
+  .capability-grid article:nth-child(2n),
+  .capability-grid article:nth-child(n+3) {
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .capability-grid h3 {
+    margin-top: 20px;
+  }
+
+  .skills {
+    margin-top: 34px;
+  }
+
+  .skills div {
+    gap: 7px;
+    padding: 18px 0;
+    line-height: 1.6;
+  }
+
+  .project-grid {
+    gap: 18px;
+  }
+
+  .project {
+    min-height: auto;
+    padding: 30px;
+  }
+
+  .project p:not(.project-label) {
+    font-size: .95rem;
+  }
+
+  .tags {
+    margin-top: 24px;
+  }
+
+  .project-actions {
+    margin-top: 28px;
+  }
+
+  .system-view {
+    margin-top: 38px;
+  }
+
+  .earlier-grid article {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrap {
+    width: min(100% - 30px, 1120px);
+  }
+
+  .nav {
+    height: 68px;
+  }
+
+  .brand {
+    font-size: .88rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a[href="https://github.com/josephmhernandez"] {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: .82rem;
+  }
+
+  .hero {
+    padding-top: 58px;
+  }
+
+  .hero .eyebrow,
+  .project-label {
+    line-height: 1.55;
+  }
+
+  h1 {
+    margin-top: 16px;
+    font-size: clamp(2.55rem, 12.5vw, 3.55rem);
+  }
+
+  .actions,
+  .project-actions {
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .actions .text-link,
+  .project-actions .text-link {
+    padding: 4px 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .section {
+    padding: 62px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .project {
+    padding: 25px;
+  }
+
+  .project h3 {
+    font-size: 1.75rem;
+  }
+
+  .earlier-grid article {
+    padding: 25px;
+  }
+
+  .credentials {
+    margin-bottom: 70px;
+  }
+
+  footer {
+    line-height: 1.55;
+  }
+}

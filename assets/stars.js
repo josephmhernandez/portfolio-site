@@ -14,13 +14,13 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = Math.max(55, Math.round((width * height) / 10500));
+    const count = Math.max(90, Math.round((width * height) / 6500));
     stars = Array.from({ length: count }, (_, index) => ({
       x: (((index * 71.3) % 100) / 100) * width,
       y: ((((index * 43.7) + 17) % 100) / 100) * height,
-      radius: .35 + (index % 5) * .18,
-      alpha: .18 + (index % 7) * .075,
-      speed: .025 + (index % 4) * .01,
+      radius: .65 + (index % 5) * .23,
+      alpha: .38 + (index % 7) * .075,
+      speed: .035 + (index % 4) * .012,
     }));
     draw();
   }
@@ -29,7 +29,7 @@
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
     context.clearRect(0, 0, width, height);
-    context.fillStyle = "#c6ece0";
+    context.fillStyle = "#111111";
     stars.forEach((star) => {
       context.globalAlpha = star.alpha;
       context.beginPath();
