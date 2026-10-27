@@ -2,6 +2,8 @@
 
 Public portfolio and index for three interactive engineering demos.
 
+![Portfolio project showcase](docs/portfolio.png)
+
 ## Live site
 
 <https://josephmhernandez.com>
@@ -25,4 +27,3 @@ aws cloudformation deploy \
 ```
 
 Upload the root site, then invalidate CloudFront after the demo builds have been copied into `demos/`.
-
