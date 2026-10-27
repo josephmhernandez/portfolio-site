@@ -16,7 +16,7 @@ Public portfolio and index for three interactive engineering demos.
 - Route 53 apex and `www` aliases
 - CloudFormation-managed infrastructure
 
-All demos share one static distribution to keep idle infrastructure cost close to zero. The Easerva demo additionally uses an API Gateway WebSocket API and Lambda.
+All demos share one static distribution. Easerva adds API Gateway WebSockets, Lambda, DynamoDB, and Claude through Bedrock. Candidate Analyzer uses a throttled Lambda API and Gemini. Map Studio uses an HTTP API, SQS worker, DynamoDB job state, and private S3 PDF output. Each backend is serverless and concurrency-limited to avoid idle compute charges.
 
 ## Deploy
 
