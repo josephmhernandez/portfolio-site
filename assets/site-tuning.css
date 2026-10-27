@@ -1,16 +1,33 @@
 .hero-shell {
   min-height: 650px;
-  background: #fff;
+  background: transparent;
   color: var(--ink);
   border-bottom: 1px solid var(--line);
 }
 
 #starfield {
-  opacity: .58;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: .52;
+  pointer-events: none;
+}
+
+.nav,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  background: #f5f3edf0;
 }
 
 .hero {
-  background: linear-gradient(90deg, #fff 0, #fffffff2 56%, #ffffff33 84%, transparent 100%);
+  background: linear-gradient(90deg, #fffffff5 0, #ffffffe8 58%, #ffffff5c 86%, transparent 100%);
 }
 
 .hero .eyebrow {
@@ -37,7 +54,19 @@
 
 .hero-facts {
   border-color: var(--line);
-  background: #ffffffd9;
+  background: #fffffff0;
+}
+
+.capability-grid article,
+.project,
+.earlier-grid article {
+  background: #fbfaf6f2;
+}
+
+.skills,
+.credentials,
+footer {
+  background: #f5f3ede8;
 }
 
 .hero-facts div {
@@ -98,7 +127,7 @@
 
   .hero {
     padding: 68px 0 46px;
-    background: #ffffffe8;
+    background: #fffffff0;
   }
 
   h1 {

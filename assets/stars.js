@@ -7,6 +7,14 @@
   let stars = [];
   let frame;
 
+  function randomGenerator(seed) {
+    let value = seed >>> 0;
+    return () => {
+      value = ((value * 1664525) + 1013904223) >>> 0;
+      return value / 4294967296;
+    };
+  }
+
   function resize() {
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
     const width = canvas.clientWidth;
@@ -14,13 +22,15 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = Math.max(90, Math.round((width * height) / 6500));
-    stars = Array.from({ length: count }, (_, index) => ({
-      x: (((index * 71.3) % 100) / 100) * width,
-      y: ((((index * 43.7) + 17) % 100) / 100) * height,
-      radius: .65 + (index % 5) * .23,
-      alpha: .38 + (index % 7) * .075,
-      speed: .035 + (index % 4) * .012,
+    const random = randomGenerator(24791 + Math.round(width) + Math.round(height));
+    const count = Math.max(105, Math.round((width * height) / 5600));
+    stars = Array.from({ length: count }, () => ({
+      x: random() * width,
+      y: random() * height,
+      radius: .55 + random() * 1.25,
+      alpha: .32 + random() * .58,
+      speedX: .12 + random() * .28,
+      speedY: .38 + random() * .72,
     }));
     draw();
   }
@@ -36,8 +46,10 @@
       context.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
       context.fill();
       if (!reduceMotion) {
-        star.y -= star.speed;
-        if (star.y < -2) star.y = height + 2;
+        star.x += star.speedX;
+        star.y -= star.speedY;
+        if (star.y < -3) star.y = height + 3;
+        if (star.x > width + 3) star.x = -3;
       }
     });
     context.globalAlpha = 1;
