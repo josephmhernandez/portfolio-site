@@ -97,6 +97,15 @@ footer {
   color: var(--muted);
 }
 
+.hero-facts strong,
+.hero-facts span {
+  display: block;
+}
+
+.hero-facts strong {
+  margin-bottom: 7px;
+}
+
 .skills {
   margin-top: 38px;
 }
@@ -219,12 +228,30 @@ footer {
 
   .hero-facts {
     margin-top: 54px;
+    gap: 14px;
+    border: 0;
+    background: transparent;
   }
 
   .hero-facts div,
   .hero-facts div:first-child {
-    padding: 18px 0;
-    border-color: var(--line);
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--line);
+    background: #fffffff0;
+  }
+
+  .hero-facts div:last-child {
+    border: 1px solid var(--line);
+  }
+
+  .hero-facts strong {
+    margin-bottom: 9px;
+    line-height: 1.25;
+  }
+
+  .hero-facts span {
+    line-height: 1.55;
   }
 
   .section {
@@ -351,6 +378,17 @@ footer {
 
   .hero {
     padding-top: 58px;
+  }
+
+  .hero-facts {
+    margin-top: 46px;
+    gap: 12px;
+  }
+
+  .hero-facts div,
+  .hero-facts div:first-child,
+  .hero-facts div:last-child {
+    padding: 18px;
   }
 
   .hero .eyebrow,
