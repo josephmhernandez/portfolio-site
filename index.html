@@ -3,100 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Joseph Hernandez builds production AI systems, real-time applications, and geospatial tools.">
+  <meta name="description" content="Joseph Hernandez is a senior software engineer building dependable backend, distributed, and cloud systems for banking and payments.">
   <link rel="canonical" href="https://josephmhernandez.com/">
-  <meta property="og:title" content="Joseph Hernandez — Software Engineer">
-  <meta property="og:description" content="Live demos of applied AI, real-time systems, and geospatial rendering projects.">
+  <meta property="og:title" content="Joseph Hernandez — Senior Software Engineer">
+  <meta property="og:description" content="Production backend systems, durable workflows, AWS architecture, and selected engineering projects.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://josephmhernandez.com/">
-  <title>Joseph Hernandez — Software Engineer</title>
+  <title>Joseph Hernandez — Senior Software Engineer</title>
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/stars.js" defer></script>
 </head>
 <body>
   <nav class="nav wrap">
-    <a class="brand" href="/">JH<span>.</span></a>
+    <a class="brand" href="/">Joseph Hernandez</a>
     <div class="nav-links">
-      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
       <a href="https://github.com/josephmhernandez" target="_blank" rel="noreferrer">GitHub</a>
       <a class="button small" href="mailto:josephmhernandez15@gmail.com">Contact</a>
     </div>
   </nav>
 
   <main>
-    <section class="hero wrap">
-      <p class="eyebrow">SOFTWARE ENGINEER · AI SYSTEMS · AWS</p>
-      <h1>I build software that turns complex workflows into <em>clear products.</em></h1>
-      <p class="lede">I’m Joseph Hernandez, a full-stack engineer focused on applied AI, real-time systems, and dependable cloud architecture. Explore the live projects below—each demo is interactive and backed by public source.</p>
-      <div class="actions">
-        <a class="button" href="#work">Explore live demos</a>
-        <a class="text-link" href="https://github.com/josephmhernandez" target="_blank" rel="noreferrer">View GitHub <span>↗</span></a>
-      </div>
-      <div class="signal-grid" aria-label="Engineering focus areas">
-        <div><strong>Real-time</strong><span>WebSockets and event-driven systems</span></div>
-        <div><strong>Applied AI</strong><span>Agents, tools, and structured workflows</span></div>
-        <div><strong>Cloud</strong><span>AWS, serverless, and production delivery</span></div>
+    <section class="hero-shell">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="hero wrap">
+        <p class="eyebrow">SENIOR SOFTWARE ENGINEER · DALLAS, TEXAS</p>
+        <h1>I build dependable systems for high-stakes workflows.</h1>
+        <p class="lede">I’m Joseph Hernandez. For nearly six years, I’ve built and operated production software across banking, payments, data, and cloud infrastructure—from Go and Postgres services to durable workflows and React applications.</p>
+        <div class="actions">
+          <a class="button light" href="#work">View selected work</a>
+          <a class="text-link light-link" href="mailto:josephmhernandez15@gmail.com">josephmhernandez15@gmail.com</a>
+        </div>
+        <div class="hero-facts" aria-label="Professional focus">
+          <div><strong>Backend systems</strong><span>Go, Java, Python, Postgres, DynamoDB</span></div>
+          <div><strong>Workflow design</strong><span>Restate, XState, DMN, event-driven architecture</span></div>
+          <div><strong>Production ownership</strong><span>AWS, Docker, OpenTelemetry, CI/CD, on-call</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="work" class="work wrap">
+    <section id="experience" class="experience wrap section">
       <div class="section-heading">
-        <p class="eyebrow">SELECTED WORK</p>
-        <h2>Built to be tried, not just described.</h2>
+        <p class="eyebrow">EXPERIENCE</p>
+        <div>
+          <h2>Backend depth, with full-stack range.</h2>
+          <p>My core work is designing resilient services and the workflows around them. I also lead user-facing delivery when the product needs to span the stack.</p>
+        </div>
       </div>
+      <div class="capability-grid">
+        <article><span>01</span><h3>Payments and distributed systems</h3><p>Designed a Go and Postgres limits platform for ACH and wire payments, including concurrency control with advisory locks and config-driven decisioning.</p></article>
+        <article><span>02</span><h3>Durable orchestration</h3><p>Built long-running workflow orchestration with Restate and XState to handle distributed transactions, retries, and stateful business processes.</p></article>
+        <article><span>03</span><h3>Cloud delivery and operations</h3><p>Ship AWS workloads across ECS, Fargate, Lambda, Kinesis, EMR, and S3, with Docker, CI/CD, OpenTelemetry tracing, and regular production support.</p></article>
+        <article><span>04</span><h3>Frontend and technical leadership</h3><p>Lead React and TypeScript application work, contribute across Go microservices, design migrations, and mentor early-career engineers.</p></article>
+      </div>
+      <div class="skills" aria-label="Technical skills">
+        <div><strong>Languages</strong><span>Go · Java · Python · TypeScript · Scala</span></div>
+        <div><strong>Backend systems</strong><span>PostgreSQL · DynamoDB · Spring Boot · Restate · XState · DMN · Distributed locking and transactions</span></div>
+        <div><strong>Cloud and delivery</strong><span>AWS · ECS · Lambda · Fargate · Kinesis · Step Functions · Glue · S3 · Docker · Terraform · CI/CD · OpenTelemetry</span></div>
+        <div><strong>Data engineering</strong><span>Spark · Hadoop · EMR · Snowflake · Salesforce · Data lakes</span></div>
+        <div><strong>Frontend and AI tooling</strong><span>React · Next.js · MFE architecture · Claude Code · Windsurf · Cursor · Codex · GitHub Copilot</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="work wrap section">
+      <div class="section-heading compact"><p class="eyebrow">SELECTED WORK</p><div><h2>Projects you can inspect and try.</h2></div></div>
       <div class="project-grid">
         <article class="project featured">
-          <div class="project-number">01</div>
           <div class="project-copy">
             <p class="project-label">REAL-TIME AI · WEBSOCKETS · STATE MACHINES</p>
             <h3>Easerva Conversational Booking</h3>
-            <p>The original archived Easerva chat application, running as a live service. Claude streams dynamic responses over WebSockets while MCP tools, XState workflows, sticky sessions, and Supabase preserve the conversation state.</p>
-            <ul class="tags"><li>Claude</li><li>WebSockets</li><li>XState + MCP</li><li>AWS Fargate</li></ul>
-            <div class="project-actions">
-              <a class="button" href="https://chat-demo.josephmhernandez.com/chat">Launch demo</a>
-              <a class="text-link" href="https://github.com/josephmhernandez/easerva-conversational-booking-demo">Source ↗</a>
-            </div>
+            <p>A stateful AI-to-human booking application. The server streams model responses over WebSockets while XState workflows, sticky sessions, tools, and persistent storage carry the conversation through discovery and scheduling.</p>
+            <ul class="tags"><li>WebSockets</li><li>XState</li><li>TypeScript</li><li>AWS Fargate</li></ul>
+            <div class="project-actions"><a class="button" href="https://chat-demo.josephmhernandez.com/chat">Launch demo</a><a class="text-link" href="https://github.com/josephmhernandez/easerva-conversational-booking-demo">Source ↗</a></div>
           </div>
-          <div class="terminal" aria-hidden="true">
-            <div class="terminal-bar"><i></i><i></i><i></i><span>booking-session.ws</span></div>
-            <pre><span class="muted">→</span> connection.established
-<span class="muted">→</span> user.message
-<span class="green">←</span> ai.delta
-<span class="green">←</span> company.recommendations
-<span class="green">←</span> time.slots.recommendations
-<span class="accent">✓ booking flow complete</span></pre>
-          </div>
+          <div class="system-view" aria-hidden="true"><span>Web client</span><i>→</i><span>WebSocket server</span><i>→</i><span>State machine</span><i>→</i><span>AI tools</span></div>
         </article>
 
         <article class="project">
-          <div class="project-number">02</div>
-          <p class="project-label">BACKEND AI · GITHUB · EVIDENCE ANALYSIS</p>
+          <p class="project-label">AI ORCHESTRATION · GITHUB · EVIDENCE ANALYSIS</p>
           <h3>Candidate Analyzer</h3>
-          <p>Compare résumé and role requirements with evidence collected from public GitHub projects. A serverless Gemini workflow returns a structured report without storing candidate data.</p>
-          <ul class="tags"><li>Gemini</li><li>AWS Lambda</li><li>GitHub API</li><li>Evidence scoring</li></ul>
-          <div class="project-actions">
-            <a class="button secondary" href="/demos/candidate/">Launch demo</a>
-            <a class="text-link" href="https://github.com/josephmhernandez/candidate-analyzer-demo">Source ↗</a>
-          </div>
+          <p>Compares a résumé and role against evidence collected from public GitHub projects. A serverless workflow produces a structured report without retaining candidate data.</p>
+          <ul class="tags"><li>Gemini</li><li>AWS Lambda</li><li>GitHub API</li><li>Structured output</li></ul>
+          <div class="project-actions"><a class="button secondary" href="/demos/candidate/">Launch demo</a><a class="text-link" href="https://github.com/josephmhernandez/candidate-analyzer-demo">Source ↗</a></div>
         </article>
 
         <article class="project">
-          <div class="project-number">03</div>
-          <p class="project-label">GEOSPATIAL · RENDERING · PRODUCT DESIGN</p>
-          <h3>Map Poster Generator</h3>
-          <p>Pan and zoom a real map, frame a custom print, and send the exact viewport payload to the original tile engine for a native 300-DPI PNG delivered through a presigned S3 link.</p>
-          <ul class="tags"><li>MapTiler</li><li>ECS Fargate</li><li>Tile engine</li><li>PNG rendering</li></ul>
-          <div class="project-actions">
-            <a class="button secondary" href="/demos/maps/">Launch demo</a>
-            <a class="text-link" href="https://github.com/josephmhernandez/map-poster-generator">Source ↗</a>
-          </div>
+          <p class="project-label">GEOSPATIAL · RENDERING · PRODUCT ENGINEERING</p>
+          <h3>Lyfe Captures Map Studio</h3>
+          <p>Frames an interactive map and sends the exact viewport to the original Python tile engine, producing a native 300-DPI PNG through a one-off Fargate task and signed S3 download.</p>
+          <ul class="tags"><li>Python</li><li>MapTiler</li><li>ECS Fargate</li><li>S3</li></ul>
+          <div class="project-actions"><a class="button secondary" href="/demos/maps/">Launch demo</a><a class="text-link" href="https://github.com/josephmhernandez/map-poster-generator">Source ↗</a></div>
         </article>
       </div>
     </section>
+
+    <section class="earlier wrap section">
+      <div class="section-heading compact"><p class="eyebrow">EARLIER WORK</p><div><h2>Selected machine-learning projects.</h2></div></div>
+      <div class="earlier-grid">
+        <article><h3>Seizure Detection</h3><p>A deep recurrent neural network using extracted body landmarks to identify seizures in video, with transfer learning and a purpose-built training dataset.</p><a class="text-link" href="https://github.com/josephmhernandez/SeizureDetection">View repository ↗</a></article>
+        <article><h3>Skin Cancer Detection</h3><p>A Raspberry Pi prototype and convolutional neural network classifying dermoscopic images across seven lesion types using the HAM dataset.</p><a class="text-link" href="https://github.com/josephmhernandez/SkinCancerDetection">View repository ↗</a></article>
+        <article><h3>Financial Sentiment Analysis</h3><p>A domain-specific classifier for financial documents using association rules, performance indicators, and a purpose-built financial lexicon.</p><a class="text-link" href="https://github.com/josephmhernandez/FinancialSentimentAnalysis">View repository ↗</a></article>
+      </div>
+    </section>
+
+    <section class="credentials wrap">
+      <div><span>Certification</span><strong>AWS Solutions Architect – Associate</strong></div>
+      <div><span>Certification</span><strong>AWS AI Practitioner – Foundational</strong></div>
+      <div><span>Education</span><strong>Texas A&amp;M · B.S. Computer Science</strong></div>
+    </section>
   </main>
 
-  <footer class="wrap">
-    <span>Joseph Hernandez · Texas</span>
-    <span>Deployed on AWS · <a href="https://github.com/josephmhernandez">GitHub</a></span>
-  </footer>
+  <footer class="wrap"><span>Joseph Hernandez · Dallas, Texas</span><span><a href="mailto:josephmhernandez15@gmail.com">Email</a> · <a href="https://github.com/josephmhernandez">GitHub</a></span></footer>
 </body>
 </html>

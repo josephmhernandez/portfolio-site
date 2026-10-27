@@ -1,6 +1,6 @@
 # Joseph Hernandez Portfolio
 
-Public portfolio and index for three interactive engineering demos.
+Public portfolio covering production backend and distributed-systems experience, three interactive engineering demos, and selected earlier machine-learning work.
 
 ![Portfolio project showcase](docs/portfolio.png)
 
@@ -16,7 +16,7 @@ Public portfolio and index for three interactive engineering demos.
 - Route 53 apex and `www` aliases
 - CloudFormation-managed infrastructure
 
-All demos share one static distribution. Easerva adds API Gateway WebSockets, Lambda, DynamoDB, and Claude through Bedrock. Candidate Analyzer uses a throttled Lambda API and Gemini. Map Studio uses an HTTP API, SQS worker, DynamoDB job state, and private S3 PDF output. Each backend is serverless and concurrency-limited to avoid idle compute charges.
+All demos share one static distribution. Easerva uses a stateful WebSocket application on ECS Fargate. Candidate Analyzer uses a throttled Lambda API and Gemini. Map Studio uses an HTTP API, SQS, DynamoDB, one-off Fargate render tasks, and private S3 PNG output. Services are concurrency-limited to control cost.
 
 ## Deploy
 
