@@ -27,7 +27,15 @@ footer {
 }
 
 .hero {
-  background: linear-gradient(90deg, #fffffff5 0, #ffffffe8 58%, #ffffff5c 86%, transparent 100%);
+  background: transparent;
+}
+
+.hero-summary {
+  max-width: 1040px;
+  margin-top: 34px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  background: #fffffff0;
 }
 
 .hero .eyebrow {
@@ -91,7 +99,12 @@ footer {
 }
 
 .hero-facts div {
+  padding-inline: 20px;
   border-color: var(--line);
+}
+
+.hero-facts div:first-child {
+  padding-left: 20px;
 }
 
 .hero-facts span {
@@ -216,7 +229,12 @@ footer {
 
   .hero {
     padding: 68px 0 46px;
-    background: #fffffff0;
+    background: transparent;
+  }
+
+  .hero-summary {
+    margin-top: 28px;
+    padding: 24px;
   }
 
   h1 {
@@ -229,7 +247,7 @@ footer {
 
   .hero-facts {
     grid-template-columns: 1fr;
-    margin-top: 54px;
+    margin-top: 44px;
     gap: 14px;
     border: 0;
     background: transparent;
@@ -382,8 +400,13 @@ footer {
     padding-top: 58px;
   }
 
+  .hero-summary {
+    margin-top: 24px;
+    padding: 20px;
+  }
+
   .hero-facts {
-    margin-top: 46px;
+    margin-top: 38px;
     gap: 12px;
   }
 
