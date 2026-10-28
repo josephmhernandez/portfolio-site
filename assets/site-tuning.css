@@ -146,6 +146,130 @@ footer {
 
 .project {
   padding: 38px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
+.easerva-card {
+  border-color: #123e34;
+  background: #123e34;
+  color: #f8f5ed;
+  box-shadow: 0 14px 34px #123e3417;
+}
+
+.easerva-card:hover {
+  border-color: #0b2d26;
+  box-shadow: 0 20px 44px #123e3438;
+}
+
+.easerva-card .project-label {
+  color: #a9d7c8;
+}
+
+.easerva-card p:not(.project-label) {
+  color: #dce9e4;
+}
+
+.easerva-card .tags li {
+  border-color: #8ab8a94f;
+  background: #ffffff0d;
+  color: #e4efeb;
+}
+
+.easerva-card .button {
+  border-color: #f4efe3;
+  background: #f4efe3;
+  color: #123e34 !important;
+}
+
+.easerva-card .button:hover {
+  border-color: #add8ca;
+  background: #add8ca;
+  color: #0d1717 !important;
+}
+
+.easerva-card .text-link {
+  color: #f8f5ed;
+}
+
+.easerva-card .system-view {
+  border-color: #6b988a;
+  background: #0b2621;
+}
+
+.map-card {
+  border-color: #aec9bc;
+  background: #dce9e1;
+  box-shadow: 0 14px 30px #185c4b12;
+}
+
+.map-card:hover {
+  border-color: #7ba392;
+  box-shadow: 0 20px 40px #185c4b28;
+}
+
+.map-card p:not(.project-label) {
+  color: #42564f;
+}
+
+.map-card .tags li {
+  border-color: #9bbbad;
+  background: #f6f4ed99;
+  color: #28483e;
+}
+
+.map-card .button.secondary {
+  border-color: #185c4b;
+  background: #185c4b;
+  color: #fff !important;
+}
+
+.map-card .button.secondary:hover {
+  border-color: #0d1717;
+  background: #0d1717;
+}
+
+.map-card .text-link {
+  color: #123e34;
+}
+
+.candidate-card {
+  border-color: #cdbf9f;
+  background: #ebe1ca;
+  box-shadow: 0 14px 30px #66563512;
+}
+
+.candidate-card:hover {
+  border-color: #aa966d;
+  box-shadow: 0 20px 40px #66563529;
+}
+
+.candidate-card p:not(.project-label) {
+  color: #5b5549;
+}
+
+.candidate-card .tags li {
+  border-color: #bdae8d;
+  background: #fbfaf680;
+  color: #4d493f;
+}
+
+.candidate-card .button.secondary {
+  border-color: #17201d;
+  background: #17201d;
+  color: #fff !important;
+}
+
+.candidate-card .button.secondary:hover {
+  border-color: #185c4b;
+  background: #185c4b;
+}
+
+.candidate-card .text-link {
+  color: #185c4b;
 }
 
 .project p:not(.project-label) {
@@ -326,6 +450,10 @@ footer {
   .project {
     min-height: auto;
     padding: 30px;
+  }
+
+  .project:hover {
+    transform: none;
   }
 
   .project p:not(.project-label) {
